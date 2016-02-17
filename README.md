@@ -7,3 +7,5 @@ Alpine Linux base with [acd_cli](https://github.com/yadayada/acd_cli) and fuse i
 **NOTE**: This image must be started with `--privileged` to use the Docker hosts /dev/fuse
 
 More will be added here, but inteim look at the docker-compose.yml in the git repo for how to run this.
+
+Scripts and config files based from jgeusebroek/webdav
