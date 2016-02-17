@@ -1,6 +1,6 @@
 [![](https://badge.imagelayers.io/sedlund/acdcli-webdav:latest.svg)](https://imagelayers.io/?images=sedlund/acdcli-webdav:latest 'Get your own badge on imagelayers.io')
 
-# sedlund/acdcli
+# sedlund/acdcli-webdav
 
 Alpine Linux base with [acd_cli](https://github.com/yadayada/acd_cli) and fuse installed and lighttpd serving webdav over SSL
 
