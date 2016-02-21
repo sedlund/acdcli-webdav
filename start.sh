@@ -3,7 +3,8 @@ set -x
 
 sed -i 's/#user_allow_other/user_allow_other/' /etc/fuse.conf
 mkdir /webdav > /dev/null
-acdcli mount -ao /webdav
+chown -R 1000:1000 /webdav
+su -c 'acdcli mount -ao /webdav' user
 
 # Force user and group because lighttpd runs as webdav
 USERNAME=webdav
