@@ -42,4 +42,4 @@ lighttpd -f /etc/lighttpd/lighttpd.conf
 # Hang on a bit while the server starts
 sleep 5
 
-tail -f /var/log/lighttpd/*.log /root/.cache/acd_cli/acd_cli.log
+tail -f /var/log/lighttpd/*.log /home/user/.cache/acd_cli/acd_cli.log

@@ -1,7 +1,7 @@
 app:
     image: sedlund/acdcli-webdav
     privileged: true
-    restart: always
+    restart: unless-stopped
     volumes:
         - ./webdav.conf:/config/webdav.conf:ro
         - ../htpasswd/htpasswd:/config/htpasswd:ro
@@ -9,4 +9,4 @@ app:
     volumes_from:
         - acdcli-data
     ports:
-        - 8030:443
+        - 8081:443
