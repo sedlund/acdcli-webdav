@@ -10,4 +10,4 @@ ADD start.sh /
 
 EXPOSE 443
 
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/entrypoint.sh"]

@@ -2,7 +2,7 @@
 
 # sedlund/acdcli-webdav
 
-Alpine Linux base with [acd_cli](https://github.com/yadayada/acd_cli) and fuse installed and lighttpd serving webdav over SSL
+Alpine Linux base with [acd_cli](https://github.com/yadayada/acd_cli) and fuse installed with lighttpd serving webdav over SSL
 
 ## usage opportunities
 
