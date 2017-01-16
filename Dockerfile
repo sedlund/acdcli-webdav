@@ -1,4 +1,4 @@
-FROM sedlund/acdcli
+FROM sedlund/acdcli:dev
 
 MAINTAINER sedlund@github @sredlund
 
