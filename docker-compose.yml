@@ -1,12 +1,18 @@
-app:
-    image: sedlund/acdcli-webdav
+version: '2'
+
+services:
+  app:
+    build: .
+    image: sedlund/acdcli-webdav:dev
     privileged: true
     restart: unless-stopped
-    volumes:
-        - ./webdav.conf:/config/webdav.conf:ro
-        - ../htpasswd/htpasswd:/config/htpasswd:ro
-        - ../certs/cert.pem:/config/cert.pem:ro
-    volumes_from:
-        - acdcli-data
     ports:
-        - 8081:443
+      - 8081:443
+    volumes_from:
+      - container:acdcli-data
+    volumes:
+      - ./webdav.conf:/config/webdav.conf:ro
+      - ../htpasswd/htpasswd:/config/htpasswd:ro
+      - ../certs/cert.pem:/config/cert.pem:ro
+
+# vim: ts=2:sts=2:et
