@@ -1,4 +1,4 @@
-FROM sedlund/acdcli:dev
+FROM sedlund/acdcli
 
 MAINTAINER sedlund@github @sredlund
 
@@ -10,6 +10,6 @@ ADD entrypoint.sh /
 
 EXPOSE 443
 
-HEALTHCHECK CMD ls /webdav || exit 1
+HEALTHCHECK CMD ls /webdav/media || exit 1
 
 ENTRYPOINT ["/entrypoint.sh"]
